@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barbatus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+                <a class="nav-link" href="index.html">
+                    <i class="bx bx-home-circle menu-icon"></i> Dashboard
+                </a>
+            </li>
+            <div class="accordion" id="sidebarAccordion">
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingDashboard">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseDashboard" aria-expanded="true" aria-controls="collapseDashboard">
+                            <i class="fa fa-users menu-icon"></i> Account
+                        </button>
+                    </h2>
+                    <div id="collapseDashboard" class="accordion-collapse collapse" aria-labelledby="headingDashboard"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="resellerMangaement.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Reseller Management
+                            </a>
+                            <a href="merchantManagement.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Merchant Management
+                            </a>
+                            <a href="contractManagement.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Contract Management
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingWallet">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWallet" aria-expanded="false" aria-controls="collapseWallet">
+                            <i class="fa fa-money-bill menu-icon"></i> Credit
+                        </button>
+                    </h2>
+                    <div id="collapseWallet" class="accordion-collapse collapse" aria-labelledby="headingWallet"
+                        data-bs-parent="#sidebarAccordion">
+                         <div class="accordion-body">
+                            <a href="topupCredit.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Topup Credit
+                            </a>
+                            <a href="adjustmentCredit.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Adjustment Credit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingTrans">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTrans" aria-expanded="false" aria-controls="collapseTrans">
+                            <i class="fa fa-ticket menu-icon"></i> Transaction
+                        </button>
+                    </h2>
+                    <div id="collapseTrans" class="accordion-collapse collapse" aria-labelledby="headingTrans"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="./Transaction/transactionEnquiry.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Transaction Enquiry
+                            </a>
+                            <a href="./Transaction/transactionEnquiry.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Pay In
+                            </a>
+                            <a href="./Transaction/transactionEnquiry.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Pay Out
+                            </a>
+                            <a href="./Transaction/transactionEnquiry.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Manual Pay Out
+                            </a>
+                            <a href="./Transaction/transactionEnquiry.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Settlement
+                            </a>
+                            <a href="./Transaction/spiderLog.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Spider Log
+                            </a>
+                            <a href="./Transaction/unknownLog.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Unknown Log
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingReport">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseReport" aria-expanded="false" aria-controls="collapseReport">
+                            <i class="fa fa-file menu-icon"></i> Report
+                        </button>
+                    </h2>
+                    <div id="collapseReport" class="accordion-collapse collapse" aria-labelledby="headingReport"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="dailyEarning.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Daily Earning
+                            </a>
+                            <a href="creditLogSummary.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Credit Log Summary
+                            </a>
+                            <a href="successRateSummary.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Success Rate Summary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingSetting">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSetting" aria-expanded="false" aria-controls="collapseSetting">
+                            <i class="fa fa-wrench menu-icon"></i> Setting
+                        </button>
+                    </h2>
+                    <div id="collapseSetting" class="accordion-collapse collapse" aria-labelledby="headingSetting"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="bankAccount.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Bank Account
+                            </a>
+                            <a href="bankPackage.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Bank Package
+                            </a>
+                            <a href="rejectReason.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Reject Reason
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingSettle">
+                        <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSettle" aria-expanded="false" aria-controls="collapseSettle">
+                            <i class="fa fa-bank menu-icon"></i> Settlements
+                        </button>
+                    </h2>
+                    <div id="collapseSettle" class="accordion-collapse collapse show" aria-labelledby="headingSettle"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="mySettlement.html" class="nav-link ddIconActive">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                My Settlement
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingAdmin">
+                        <button class="accordion-button accordionBtn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                            <i class="fa fa-user-secret menu-icon"></i> Admin
+                        </button>
+                    </h2>
+                    <div id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdmin"
+                        data-bs-parent="#sidebarAccordion">
+                        <div class="accordion-body">
+                            <a href="myProfile.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                My Profile
+                            </a>
+                            <a href="changePassword.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Change Password
+                            </a>
+                            <a href="adminManagement.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Admin Management
+                            </a>
+                            <a href="roleManagement.html" class="nav-link">
+                                <svg class="ddIcon" width="5" height="7" viewBox="0 0 5 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 3.125L-2.75287e-07 6.04784L-1.97647e-08 0.202164L4.5 3.125Z"
+                                        fill="#2645E0">
+                                    </path>
+                                </svg>
+                                Role Management
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <!-- <div class="logout">
+            <a href="#">Logout</a>
+        </div> -->
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <button class="menu-toggle btn btn-primary" onclick="toggleSidebar()">
+                <span class="menu-open"><img src="./assets/images/menu.png" alt=""></span>
+                <span class="close-icon"><img src="./assets/images/close.png" alt=""></span>
+            </button>
+            <div class="timeSection"></div>
+        </div>
+        <!-- header end -->
+        <div class="manageContainer">
+            <h1 class="mainTitle">My Settlement</h1>
+            <div class="table-container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="input-group">
+                            <div class="d-flex w-100">
+                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                <input type="text" name="tsc_datetime" id="bs-rangepicker-range"
+                                    class="form-control formInput formDateInput" readonly>
+                            </div>
+                            <div class="daterangepicker ltr show-ranges opensright">
+                                <div class="ranges">
+                                    <ul>
+                                        <li data-range-key="Today" class="active">Today</li>
+                                        <li data-range-key="Yesterday">Yesterday</li>
+                                        <li data-range-key="Last 3 Days">Last 3 Days</li>
+                                        <li data-range-key="Last 7 Days">Last 7 Days</li>
+                                        <li data-range-key="Last 30 Days">Last 30 Days</li>
+                                        <li data-range-key="This Month">This Month</li>
+                                        <li data-range-key="Last Month">Last Month</li>
+                                        <li data-range-key="This Year">This Year</li>
+                                        <li data-range-key="Custom Range">Custom Range</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mt-sm-0 mt-3">
+                        <div class="form-group mb-0">
+                            <div class="dropdown-container dropdown-container2">
+                                <div class="dropdown-selected">
+                                    <span>All Status</span>
+                                    <i class="chevron down"></i>
+                                </div>
+                                <div class="dropdown-list">
+                                    <input type="text" class="dropdown-search formInput" placeholder="Search...">
+                                    <div class="dropdown-item">initiated</div>
+                                    <div class="dropdown-item">pending</div>
+                                    <div class="dropdown-item">expired</div>
+                                    <div class="dropdown-item">rejected</div>
+                                    <div class="dropdown-item">completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 mt-lg-0 mt-3">
+                        <button type="button" class="searchBtn">Search</button>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-md-6 col-sm-6 col-12 mt-lg-0 mt-3 d-flex justify-content-end">
+                        <a href="settlementManagementCreate.html"><button class="add-reseller">+ New Settlement</button></a>
+                    </div>
+                </div>
+                <div class="controls">
+                    <label>Show
+                        <select>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                        </select> entries
+                    </label>
+                    <input type="text" placeholder="Search..." class="search">
+                </div>
+                <div class="table-main-container">
+                    <table class="tableSec tableSec2">
+                        <thead>
+                            <tr>
+                                <th>CREATETIME <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>TRANSACTION TOKEN <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>MERCHANT <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>TYPE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>CUSTOMER <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>AMOUNT <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>FEE <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>TO <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                                <th>STATUS <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></th>
+                            </tr>
+                        </thead>
+                        <tr class="data-not-available">
+                            <td colspan="9">No data available in table</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="paginationSec">
+                    <p>Showing 0 to 0 of 0 entries</p>
+                    <!-- pagination -->
+                    <div class="pagination">
+                        <a href="#">Previous</a>
+                        <a href="#" class="active">0</a>
+                        <a href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="footer">
+                <p>Copyright © 2024 Barbatus</p>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/file.js"></script>
+    <script>
+
+        function showDateTime() {
+            var myDiv = document.querySelector(".timeSection");
+
+            if (!myDiv) {
+                console.error("Element with class 'timeSection' not found.");
+                return;
+            }
+
+            var date = new Date();
+            var dayList = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            var monthNames = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            var dayName = dayList[date.getDay()];
+            var monthName = monthNames[date.getMonth()];
+            var today = `${monthName} ${date.getDate()}, ${date.getFullYear()}, ${dayName}`;
+
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+
+            var formattedTime = [
+                hour.toString().padStart(2, '0'),
+                min.toString().padStart(2, '0'),
+                sec.toString().padStart(2, '0')
+            ].join(':');
+
+            myDiv.innerText = `${today} ${formattedTime}`;
+        }
+
+        showDateTime();
+        setInterval(showDateTime, 1000);
+        $(document).ready(function () {
+    function setDateRange(selectedRange) {
+        var startDate, endDate;
+        var now = new Date();
+
+        switch (selectedRange) {
+            case 'Today':
+                startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+                break;
+            case 'Yesterday':
+                var yesterday = new Date(now);
+                yesterday.setDate(now.getDate() - 1);
+                startDate = new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate(), 0, 0, 0);
+                endDate = new Date(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate(), 23, 59, 59);
+                break;
+            case 'Last 3 Days':
+                startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 2, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+                break;
+            case 'Last 7 Days':
+                startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 6, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+                break;
+            case 'Last 30 Days':
+                startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 29, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+                break;
+            case 'This Month':
+                startDate = new Date(now.getFullYear(), now.getMonth(), 1, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+                break;
+            case 'Last Month':
+                startDate = new Date(now.getFullYear(), now.getMonth() - 1, 1, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), now.getMonth(), 0, 23, 59, 59);
+                break;
+            case 'This Year':
+                startDate = new Date(now.getFullYear(), 0, 1, 0, 0, 0);
+                endDate = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
+                break;
+            default:
+                break;
+        }
+
+        var startDateFormatted = formatDate(startDate);
+        var endDateFormatted = formatDate(endDate);
+
+        $('#bs-rangepicker-range').val(startDateFormatted + ' - ' + endDateFormatted);
+    }
+
+    // Set the default range to "Today"
+    setDateRange('Today');
+
+    $('#bs-rangepicker-range').click(function (event) {
+        event.stopPropagation(); // Prevent propagation to document click event
+        $('.daterangepicker').toggle();
+    });
+
+    $('.daterangepicker .ranges li').click(function () {
+        $('.daterangepicker .ranges li').removeClass('active');
+        $(this).addClass('active');
+
+        var selectedRange = $(this).attr('data-range-key');
+        setDateRange(selectedRange);
+
+        $('.daterangepicker').hide();
+    });
+
+    $(document).click(function (event) {
+        var target = $(event.target);
+        if (!target.closest('.daterangepicker').length && !target.is('#bs-rangepicker-range')) {
+            $('.daterangepicker').hide();
+        }
+    });
+
+    function formatDate(date) {
+        var year = date.getFullYear();
+        var month = padZero(date.getMonth() + 1);
+        var day = padZero(date.getDate());
+        var hours = padZero(date.getHours());
+        var minutes = padZero(date.getMinutes());
+        var seconds = padZero(date.getSeconds());
+        return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+    }
+
+    function padZero(num) {
+        return num < 10 ? '0' + num : num;
+    }
+});
+
+
+
+        const dropdownSelected = document.querySelector('.dropdown-selected');
+        const dropdownList = document.querySelector('.dropdown-list');
+        const dropdownSearch = document.querySelector('.dropdown-search');
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        const chevron = document.querySelector('.chevron');
+
+        dropdownSelected.addEventListener('click', function () {
+            dropdownList.classList.toggle('show');
+            chevron.classList.toggle('up');
+            chevron.classList.toggle('down');
+        });
+
+        dropdownSearch.addEventListener('input', function () {
+            const filter = dropdownSearch.value.toLowerCase();
+            dropdownItems.forEach(function (item) {
+                if (item.textContent.toLowerCase().includes(filter)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        dropdownItems.forEach(function (item) {
+            item.addEventListener('click', function () {
+                dropdownSelected.querySelector('span').textContent = item.textContent;
+                dropdownList.classList.remove('show');
+                chevron.classList.remove('up');
+                chevron.classList.add('down');
+            });
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('.dropdown-container')) {
+                dropdownList.classList.remove('show');
+                chevron.classList.remove('up');
+                chevron.classList.add('down');
+            }
+        });
+    </script>
+</body>
+
+</html>
